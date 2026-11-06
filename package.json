@@ -1,0 +1,29 @@
+{
+  "name": "copilot-api-portfolio",
+  "version": "1.0.0",
+  "description": "A showcase of integrations and automations built with the GitHub Copilot API",
+  "main": "src/index.js",
+  "scripts": {
+    "setup": "npm install && node scripts/setup.js",
+    "summarize-pr": "node src/workflows/pr-summarizer.js",
+    "code-review": "node src/workflows/code-reviewer.js",
+    "query-architecture": "node src/workflows/architecture-query.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "copilot",
+    "api",
+    "automation",
+    "developer-tools",
+    "github"
+  ],
+  "author": "Bryan D",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "octokit": "^2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
